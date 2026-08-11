@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Óptica - Arco-Íris</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho Gradiente do Arco-Íris */
+        header {
+            background: linear-gradient(135deg, #ff4b4b, #ffa500, #eab308, #22c55e, #06b6d4, #4f46e5, #a855f7);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        /* Menu Fixado no Topo */
+        nav {
+            background: #0f172a;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fde047;
+        }
+
+        /* Seções do Conteúdo */
+        section {
+            width: 85%;
+            max-width: 900px;
+            margin: 35px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        p, ul {
+            font-size: 1.05rem;
+            color: #334155;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Bordas Coloridas por Seção */
+        .vermelho { border-left: 10px solid #ef4444; }
+        .laranja  { border-left: 10px solid #f97316; }
+        .amarelo  { border-left: 10px solid #eab308; }
+        .verde    { border-left: 10px solid #22c55e; }
+        .azul     { border-left: 10px solid #3b82f6; }
+        .anil     { border-left: 10px solid #6366f1; }
+        .violeta  { border-left: 10px solid #a855f7; }
+
+        /* Área da História em Quadrinhos */
+        .hq {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .hq img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: 2px solid #e2e8f0;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer h3 {
+            color: #f8fafc;
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌈 Projeto de Óptica - Arco-Íris</h1>
+        <p>Como a luz branca é formada por várias cores</p>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#desenvolvimento">Desenvolvimento</a>
+        <a href="#experimento">Experimento</a>
+        <a href="#imagens">HQ</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#conclusao">Conclusão</a>
+        <a href="#referencias">Referências</a>
+    </nav>
+
+    <section id="introducao" class="vermelho">
+        <h2>🔴 Introdução</h2>
+        <p>
+            A Óptica é o ramo da Física que estuda a luz e os fenômenos relacionados a ela. Um dos fenômenos mais conhecidos é a formação do arco-íris, que acontece quando a luz branca é separada em várias cores.
+        </p>
+        <p style="margin-top: 10px;">
+            Neste projeto mostramos que a luz branca não possui apenas uma cor. Utilizando um CD e uma lanterna, foi possível visualizar o espectro completo de cores.
+        </p>
+    </section>
+
+    <section id="desenvolvimento" class="laranja">
+        <h2>🟠 Desenvolvimento</h2>
+        <p>
+            Os pequenos sulcos existentes na superfície de um CD funcionam como uma <b>rede de difração</b>.
+            Quando a luz branca atinge essa superfície, cada comprimento de onda é refletido em um ângulo diferente, separando as cores.
+            Foi exatamente esse efeito que permitiu observar o arco-íris durante o experimento.
+        </p>
+        <br>
+        <h3>Cores observadas no espectro:</h3>
+        <ul>
+            <li>🔴 Vermelho</li>
+            <li>🟠 Laranja</li>
+            <li>🟡 Amarelo</li>
+            <li>🟢 Verde</li>
+            <li>🔵 Azul</li>
+            <li>🟣 Anil</li>
+            <li>🟪 Violeta</li>
+        </ul>
+    </section>
+
+    <section id="experimento" class="amarelo">
+        <h2>🟡 Experimento</h2>
+        <p><b>Materiais Utilizados:</b></p>
+        <ul>
+            <li>1 Lanterna (ou lanterna do celular)</li>
+            <li>1 CD/DVD comum</li>
+            <li>Ambiente pouco iluminado</li>
+        </ul>
+        <br>
+        <p><b>Procedimento:</b></p>
+        <p>
+            A lanterna foi apontada para a superfície do CD.
+            Ao refletir a luz, apareceram diversas cores semelhantes às do arco-íris projetadas no ambiente.
+            Esse efeito acontece devido à separação da luz branca em diferentes comprimentos de onda.
+        </p>
+    </section>
+
+    <section id="imagens" class="verde">
+        <h2>🟢 História em Quadrinhos</h2>
+        <p>A história em quadrinhos abaixo representa de forma visual todo o experimento realizado:</p>
+        <div class="hq">
+            <img src="WhatsApp Image 2026-08-11 at 18.48.29.jpeg" alt="História em Quadrinhos - Projeto de Óptica">
+        </div>
+    </section>
+
+    <section id="curiosidades" class="azul">
+        <h2>🔵 Curiosidades</h2>
+        <ul>
+            <li>O arco-íris possui sete cores principais reconhecidas na física clássica.</li>
+            <li>A luz branca do Sol é composta por todas essas cores juntas.</li>
+            <li>Na natureza, as gotas de chuva funcionam como pequenos prismas de água.</li>
+            <li>CDs, bolhas de sabão e lâminas de óleo também causam a separação da luz.</li>
+        </ul>
+    </section>
+
+    <section id="conclusao" class="anil">
+        <h2>🟣 Conclusão</h2>
+        <p>
+            O experimento mostrou de forma simples e prática que a luz branca é formada por várias cores.
+            Com materiais acessíveis, foi possível compreender um importante conceito da Física (difração e dispersão da luz), tornando o aprendizado divertido, visual e interativo.
+        </p>
+    </section>
+
+    <section id="referencias" class="violeta">
+        <h2>🟪 Referências</h2>
+        <ul>
+            <li>Livro Didático de Física - Ensino Médio</li>
+            <li><a href="https://pt.wikipedia.org/wiki/%C3%93ptica" target="_blank">Wikipedia - Óptica</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Dispers%C3%A3o_da_luz" target="_blank">Wikipedia - Dispersão da Luz</a></li>
+            <li><a href="https://brasilescola.uol.com.br/fisica/optica.htm" target="_blank">Brasil Escola - Óptica</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <h3>Projeto de Óptica - O Arco-Íris Escondido na Luz</h3>
+        <p>Feira de Ciências • Desenvolvido em HTML e CSS</p>
+    </footer>
+
+</body>
+</html>
